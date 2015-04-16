@@ -1,3 +1,6 @@
+shop:
+    pattern:      /shop/{name}
+    defaults:     { _controller: AcmeShopBundle:Shop:index }
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

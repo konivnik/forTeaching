@@ -1,0 +1,16 @@
+{% extends "AcmeShopBundle:Shop:layout.html.twig" %}
+{% block title %}hi people{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/acmeshop/css/main.css') }}" />
+{% endblock %}
+{% block header %}
+    {% include 'AcmeShopBundle:Shop:header.html.twig'%}
+{% endblock %}
+
+{% block leftBlock %}
+    {% include 'AcmeShopBundle:Shop:leftBlock.html.twig'%}
+{% endblock %}
+
+{% block body %}
+    {{ name }}
+{% endblock %}

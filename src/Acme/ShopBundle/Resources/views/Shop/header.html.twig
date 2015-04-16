@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-xs-9 col-xs-offset-3">
+        <ul class="nav nav-tabs my-nav-style">
+            <li role="presentation" {% if name == 'main' %}class="active"{% endif %}><a href="{{ path('shop', {'name': 'main'}) }}">Главная</a></li>
+            <li role="presentation" {% if name == 'add' %}class="active"{% endif %}><a href="{{ path('shop', {'name': 'add'}) }}">Добавить товар</a></li>
+            <li role="presentation" {% if name == 'contact' %}class="active"{% endif %}><a href="{{ path('shop', {'name': 'contact'}) }}">...</a></li>
+        </ul>
+    </div>
+</div>
